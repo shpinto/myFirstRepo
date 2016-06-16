@@ -1,0 +1,20 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "my-outyet-service"
+    },
+    "spec": {
+        "selector": {
+            "app": "outyet"
+        },
+        "ports": [
+            {
+                "protocol": "TCP",
+                "port": 80,
+                "targetPort": 8080
+            }
+        ],
+     "type": "LoadBalancer"
+    }
+}
